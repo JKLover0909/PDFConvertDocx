@@ -24,7 +24,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install pdf2docx tkinterdnd2 pyinstaller
+          pip install PyMuPDF python-docx tkinterdnd2 pyinstaller
 
       - name: Build EXE
         shell: cmd

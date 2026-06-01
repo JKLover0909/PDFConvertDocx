@@ -1,3 +1,4 @@
-pdf2docx
+PyMuPDF
+python-docx
 tkinterdnd2
 pyinstaller
