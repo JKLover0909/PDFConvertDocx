@@ -31,7 +31,7 @@ jobs:
         run: |
           python -c "import tkinterdnd2, os; print(os.path.dirname(tkinterdnd2.__file__))" > dnd_path.txt
           set /p DND_PATH=<dnd_path.txt
-          pyinstaller --onefile --windowed --name "PDF_to_DOCX" --add-data "%DND_PATH%;tkinterdnd2" converter.py
+          pyinstaller --onefile --windowed --noupx --name "PDF_to_DOCX" --add-data "%DND_PATH%;tkinterdnd2" converter.py
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4.6.2
