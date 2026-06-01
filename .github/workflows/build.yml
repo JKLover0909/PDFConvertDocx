@@ -12,10 +12,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.2.2
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v5.6.0
         with:
           python-version: "3.11"
 
@@ -31,7 +31,7 @@ jobs:
           pyinstaller --onefile --windowed --name "PDF_to_DOCX" --add-data "%DND_PATH%;tkinterdnd2" converter.py
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v4.6.2
         with:
           name: PDF_to_DOCX
           path: dist/PDF_to_DOCX.exe
